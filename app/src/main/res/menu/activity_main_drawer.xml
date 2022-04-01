@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/navigation_item_1"
+        android:title="Session">
+        <menu
+
+        android:id="@+id/session_group"
+        android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_sessions_main"
+                android:icon="@drawable/ic_session_main"
+                android:title="@string/sessions" />
+
+            <item
+                android:id="@+id/nav_session_calendar"
+                android:icon="@drawable/ic_calendar"
+                android:title="@string/menu_session_calendar" />
+
+            <item
+                android:id="@+id/nav_session_plan"
+                android:icon="@drawable/ic_session"
+                android:title="@string/menu_session_plan" />
+
+            <item
+                android:id="@+id/nav_session_notes"
+                android:icon="@drawable/ic_session_note"
+                android:title="@string/menu_session_notes" />
+
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navigation_item_2"
+        android:title="@string/characters">
+
+        <menu
+        android:id="@+id/character_group"
+        android:checkableBehavior="single" >
+
+            <item
+                android:id="@+id/nav_players"
+                android:icon="@drawable/ic_character"
+                android:title="@string/menu_players" />
+
+            <item
+                android:id="@+id/nav_npcs"
+                android:icon="@drawable/ic_npc"
+                android:title="@string/menu_npcs" />
+
+            <item
+                android:id="@+id/nav_npc_gen"
+                android:icon="@drawable/ic_npc_gen"
+                android:title="@string/menu_npc_gen" />
+
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/dice_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dice"
+            android:icon="@drawable/ic_d20_20_01"
+            android:title="@string/menu_dice" />
+    </group>
+</menu>

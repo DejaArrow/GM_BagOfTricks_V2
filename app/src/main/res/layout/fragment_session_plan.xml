@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-154dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bg_lgreen">
+
+
+            <TextView
+                android:id="@+id/session_plan_header"
+                android:layout_width="177dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/planning_checklist"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb_quest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/amarante"
+
+                android:text="@string/questline_plan"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_location_plan" />
+
+            <CheckBox
+                android:id="@+id/cb_npcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/location_npcs_plan"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_questline_plan" />
+
+            <CheckBox
+                android:id="@+id/cb_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/items_plan"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_location_npc_plan" />
+
+            <CheckBox
+                android:id="@+id/cb_events_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/edit_events_plan"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_items_plan" />
+
+            <CheckBox
+                android:id="@+id/cb_location"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/location_plan"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/session_number_plan" />
+
+            <EditText
+                android:id="@+id/edit_location_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:fontFamily="@font/amarante"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="@string/edit_location_plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.089"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_location" />
+
+            <EditText
+                android:id="@+id/edit_questline_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/amarante"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="@string/edit_questline_plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_quest" />
+
+            <EditText
+                android:id="@+id/edit_location_npc_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:fontFamily="@font/amarante"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="@string/edit_npcs_plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_npcs" />
+
+            <EditText
+                android:id="@+id/edit_items_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/amarante"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="@string/edit_items_plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.084"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_items" />
+
+            <EditText
+                android:id="@+id/edit_plan_notes"
+                android:layout_width="375dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#629749"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plan_notes"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/plan_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/notes_plan"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_event_plan" />
+
+            <EditText
+                android:id="@+id/edit_event_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/amarante"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="@string/edit_events_plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.087"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_events_plan" />
+
+            <TextView
+                android:id="@+id/session_number_plan"
+                android:layout_width="138dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/session_no"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.059"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/session_plan_header" />
+
+            <EditText
+                android:id="@+id/session_no_plan"
+                android:layout_width="138dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="152dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/_0"
+                app:layout_constraintBottom_toBottomOf="@+id/session_number_plan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.916"
+                app:layout_constraintStart_toEndOf="@+id/session_number_plan"
+                app:layout_constraintTop_toBottomOf="@+id/session_plan_header"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/session_plan_button"
+                style="@style/Button.Green"
+                android:layout_width="138dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/save_button_plan"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_plan_notes"
+                app:layout_constraintVertical_bias="0.0">
+
+
+            </Button>
+
+            <Button
+                android:id="@+id/session_plan_reset"
+                android:layout_width="136dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/amarante"
+                android:text="@string/reset_plan_button"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/session_plan_button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_plan_notes"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

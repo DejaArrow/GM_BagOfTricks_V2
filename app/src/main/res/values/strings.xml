@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">GM_BagOfTricks_V2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_character">Characters</string>
+    <string name="menu_session">Session</string>
+    <string name="menu_dice">Dice</string>
+    <string name="menu_session_plan">Session Plan</string>
+    <string name="menu_session_notes">Session Notes</string>
+    <string name="menu_players">Players</string>
+    <string name="menu_npc_gen">NPC Generator</string>
+    <string name="menu_npcs">NPCs</string>
+    <string name="menu_session_calendar">Session Calendar</string>
+    <string name="roll_label">"Roll "</string>
+    <string name="dice_roller">Dice Roller</string>
+    <string name="session_plan">Session Plan</string>
+    <string name="session_to_do_list">Session To Do List</string>
+    <string name="clear">Clear</string>
+    <string name="delete">Delete</string>
+    <string name="delete_check_item">Delete</string>
+    <string name="add_an_item_check">Add an Item</string>
+    <string name="session_plan_checklist">Session Plan Checklist</string>
+    <string name="add_check_item">Add</string>
+    <string name="roll_dice">Roll</string>
+    <string name="location_plan">Location</string>
+    <string name="questline_plan">Questline</string>
+    <string name="location_npcs_plan">Location NPCs</string>
+    <string name="items_plan">Items</string>
+    <string name="event_plan">event_plan</string>
+    <string name="notes_plan">Notes</string>
+    <string name="edit_items_plan">Items</string>
+    <string name="edit_npcs_plan">NPCs</string>
+    <string name="edit_questline_plan">Questline</string>
+    <string name="edit_location_plan">Location</string>
+    <string name="edit_events_plan">Events</string>
+    <string name="planning_checklist">Planning Checklist</string>
+    <string name="characters">Characters</string>
+    <string name="sessions">Sessions</string>
+    <string name="_0">0</string>
+    <string name="save_button_plan">Save</string>
+    <string name="reset_plan_button">Reset</string>
+    <string name="session_no">Session No.</string>
+    <string name="note_session">Note</string>
+    <string name="updated_at_session_note">Updated At</string>
+    <string name="enter_session_title">Enter Session Title</string>
+    <string name="save_note">SAVE NOTE</string>
+    <string name="enter_session_notes">Enter session notes</string>
+
+
+    <string-array name="dice_array">
+        <item>D4</item>
+        <item>D6</item>
+        <item>D8</item>
+        <item>D10</item>
+        <item>D12</item>
+        <item>D20</item>
+        <item>D100</item>
+
+    </string-array>
+</resources>

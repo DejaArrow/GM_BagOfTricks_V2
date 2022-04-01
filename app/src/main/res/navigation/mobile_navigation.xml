@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+
+        android:id="@+id/nav_home"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_session_calendar"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.session.SessionCalendarFragment"
+        android:label="@string/menu_session_calendar"
+        tools:layout="@layout/fragment_session_calendar" />
+
+    <fragment
+        android:id="@+id/nav_session_plan"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.session.SessionPlanFragment"
+        android:label="@string/menu_session"
+        tools:layout="@layout/fragment_session_plan" />
+
+    <fragment
+        android:id="@+id/nav_session_notes"
+        android:name="com.p110122341.gm_bagoftricks_v2.MainActivityNotes"
+        android:label="@string/menu_session_notes"
+        tools:layout="@layout/fragment_session_notes" />
+
+    <fragment
+        android:id="@+id/nav_character"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.characters.PlayersFragment"
+        android:label="@string/menu_character"
+        tools:layout="@layout/fragment_character" />
+
+    <fragment
+        android:id="@+id/nav_npcs"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.characters.NPCsFragment"
+        android:label="@string/menu_npcs"
+        tools:layout="@layout/fragment_npcs" />
+
+    <fragment
+        android:id="@+id/nav_npc_gen"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.characters.NPCGenFragment"
+        android:label="@string/menu_npc_gen"
+        tools:layout="@layout/fragment_npc_gen" />
+
+    <fragment
+        android:id="@+id/nav_dice"
+        android:name="com.p110122341.gm_bagoftricks_v2.ui.dice.DiceFragment"
+        android:label="@string/menu_dice"
+        tools:layout="@layout/fragment_dice" />
+</navigation>
